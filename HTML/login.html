@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheese Heaven | Registro</title>
+    <link rel="stylesheet" href="../CSS/header.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
+    <link rel="stylesheet" href="../CSS/login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <button id="open-menu" class="open-menu"><img src="../Imagenes/menu.svg" alt="Menu"></button>
+
+        <a href="../index.html"><img class="logo" src="../Imagenes/logo.svg" alt="Cheese Heaven logo"></a>
+        <div class="div-browser">
+            <input class="input-browser" type="text" placeholder="Buscar...">
+            <button class="button-browser"><img class="img-browser" src="../Imagenes/browser.svg" alt="Buscar"></button>
+        </div>
+        <div class="icons">
+            <a href="../HTML/signIn.html"><img class="user" src="../Imagenes/user.svg" alt="Inicio sesión"></a>
+            <a href="../index.html"><img class="cart" src="../Imagenes/cart.svg" alt="Carrito"></a>
+        </div>
+    </header>
+    <nav class="nav" id="nav">
+        <button id="close-menu" class="close-menu"><img src="../Imagenes/close.svg" alt="Cerrar"></button>
+        <ul class="nav-list">
+            <li><a href="../index.html">Tienda online</a></li>
+            <li><a href="../index.html">Nuestra historia</a></li>
+            <li><a href="../index.html">Contacto</a></li>
+            <li><a href="../index.html">Sobre nosotros</a></li>
+        </ul>
+    </nav>
+    <main class="background">
+
+        <div class="login_form">
+            <form class="form" onsubmit="return formValidation()">
+
+                <h1 class="form_title">Registro</h1>
+
+                <div class="form_div">
+                    <label class="form_label" for="name">Nombre: </label>
+                    <input name="name" type="text" placeholder=" " class="form_input" id="input_name">
+                </div>
+
+                <div class="form_div">
+                    <label class="form_label" for="surname">Primer apellido: </label>
+                    <input name="surname" type="text" placeholder=" " class="form_input" id="input_surname">
+                </div>
+
+                <div class="form_div">
+                    <label class="form_label" for="birthdate">Fecha de nacimiento: </label>
+                    <input name="birthdate" type="text" class="form_input" onfocus="(this.type='date')"
+                        onblur="if(!this.value)this.type='text'" id="input_birthdate">
+                </div>
+
+                <div class="form_div">
+                    <label class="form_label" for="email">Correo: </label>
+                    <input name="email" type="text" placeholder=" " class="form_input" id="input_email">
+                </div>
+
+                <div class="form_div">
+                    <label class="form_label" for="password">Contraseña: </label>
+                    <input name="password" type="password" placeholder=" " min="6" max="15" class="form_input"
+                        id="input_password">
+                </div>
+
+                <input type="submit" class="form_button" value="Enviar">
+                <input type="reset" class="form_button" id="reset_button" value="Reset">
+
+
+                <div id="mistakes" class="mistakes-message"></div>
+
+
+            </form>
+        </div>
+    </main>
+
+
+    <footer>
+        <div class="footer_left">
+            <p>&copy; CHEESE HEAVEN 2024</p>
+            <ul>
+                <li><a href="../index.html">Términos y condiciones</a></li>
+                <li><a href="../index.html">Política de privacidad</a></li>
+                <li><a href="../index.html">Contacta con nosotros</a></li>
+            </ul>
+        </div>
+        <div class="location">
+            <p>Nuestra localización:</p>
+            <p>Calle Falsa, 13 A Coruña, España</p>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46411.59682180321!2d-8.453883235425263!3d43.361866755792185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2e7cfcf174574d%3A0x6a47350d095cdfee!2zQSBDb3J1w7FhLCBMYSBDb3J1w7Fh!5e0!3m2!1ses!2ses!4v1727446784070!5m2!1ses!2ses"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="social_media">
+            <p>Redes sociales</p>
+            <div class="social_media_icons">
+                <a href="https://www.instagram.com/"><img src="../Imagenes/instagram.svg" alt="Instagram"></a>
+                <a href="https://x.com/?lang=es"><img src="../Imagenes/twitter.svg" alt="X"></a>
+                <a href="https://www.facebook.com/?locale=es_ES"><img src="../Imagenes/facebook.svg" alt="Facebook"></a>
+                <a href="https://www.tiktok.com/es/"><img src="../Imagenes/tiktok.svg" alt="TikTok"></a>
+            </div>
+        </div>
+
+
+
+
+
+    </footer>
+
+
+    <script src="../JS/header.js"></script>
+    <script src="../JS/loginValidation.js"></script>
+
+</body>
+
+</html>

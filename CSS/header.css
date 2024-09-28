@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.background {    
+    background-image: url('../Imagenes/fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    padding: 3px;
+    background-color: #c4a98d;
+    position: relative;
+}
+
+.open-menu, .close-menu{
+    justify-self: start;
+    left: 20px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.open-menu img, .close-menu img{
+    width: 30px;
+}
+
+.logo {
+    justify-self: left;
+    width: 100px;
+}
+
+.div-browser {
+    position: relative;
+    display: flex; 
+    align-items: center;
+    border-radius: 5px;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.input-browser {
+    width: 500px;
+    padding: 10px;
+    border-radius: 5px 0 0 5px;
+    border: 0;
+    outline: none;
+    font-size: 15px;
+    height: 50px;
+    background-color: #f4f3e3;
+    font-family: 'Playfair Display', serif;
+
+}
+
+.button-browser {
+    background-color: #e0dfce;
+    padding: 0 15px; 
+    border: 0;
+    border-radius: 0 5px 5px 0; 
+    cursor: pointer;
+    height: 50px; 
+    display: flex; 
+    align-items: center; 
+}
+
+.img-browser {
+    width: 20px;
+    height: 20px;
+}
+
+
+.button-browser:hover{
+    background-color: rgb(224, 223, 206, 0.7);
+} 
+
+.icons {
+    justify-self: end;
+    gap: 10px;    
+    display: flex;
+    margin: 10px;
+}
+
+.icons img {
+    width: 30px;
+}
+
+.nav {
+    display: none;
+}
+
+.nav-list {
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+
+.open-menu{
+    display: block;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.open-menu.invisible{
+    visibility: hidden;
+}
+
+nav .close-menu {
+    display: none;
+}
+    
+.nav.visible {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #c4a98d;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+
+}   
+
+.nav.visible .close-menu {
+    display: block;
+    cursor: pointer;
+    margin: 20px;
+    margin-top: 40px;
+}
+
+.nav.visible .nav-list {
+    padding: 50px;
+    padding-top: 90px;
+    flex-direction: column;
+    align-items: start;
+}
